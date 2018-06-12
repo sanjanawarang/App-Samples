@@ -1,0 +1,112 @@
+<html>
+	<head>
+	<style>
+		ul{
+			padding: 0;
+			margin: 0;
+		}
+		
+		li{
+			list-style-type: none;
+		}
+		
+		input{
+			display:none;
+		}
+		
+		.outer{
+			font-size: larger;
+			font-family: monospace;
+			width: 230px;
+			padding: 5px 15px 15px;
+			background-color: aliceblue;
+		}
+		
+		p{
+			text-transform: uppercase;
+			font-size: medium;
+			margin: 5px 0px 10px;
+		}
+		
+		.checkArea{
+			display: flex;
+			align-items: center;
+			justify-content: space-between;
+			padding: 0 5px;
+			border: 1px solid darkgrey;
+			border-width: 1px 1px 0 1px;
+			height: 30px;
+			cursor: pointer;
+			background-color: white;
+			color: black;
+		}
+		
+		li:last-child .checkArea{
+			border-bottom-width: 1px;
+		}
+
+		.countSpan{
+			background-color: lightgrey;
+			color: white;
+			height: 18px;
+			width: 18px;
+			border-radius: 50%;
+			text-align: center;
+		}
+		
+		input:checked + label .checkArea{
+			background-color: lightgrey;
+			color: white;
+			cursor: pointer;
+		}
+		
+		input:checked + label .countSpan{
+			background-color: white;
+			color: lightgrey;
+		}
+	</style>
+	</head>
+	<body>
+		<div class="outer">
+			<p>Filters</p>
+			<ul>
+				<li>
+					<input type="checkbox" id="new">
+					<label for="new">
+						<div class="checkArea">
+							New Questions
+							<span class="countSpan">2</span>
+						</div>
+					</label>
+				</li>
+				<li>
+					<input type="checkbox" id="upvote">
+					<label for="upvote">
+						<div class="checkArea">
+							Most Upvoted
+							<span class="countSpan">2</span>
+						</div>
+					</label>
+				</li>
+				<li>
+					<input type="checkbox" id="bookmark">
+					<label for="bookmark">
+						<div class="checkArea">
+							Bookmarked Questions
+							<span class="countSpan">2</span>
+						</div>
+					</label>
+				</li>
+				<li>
+					<input type="checkbox" id="unanswered">
+					<label for="unanswered">
+						<div class="checkArea">
+							Unanswered Questions
+							<span class="countSpan">2</span>
+						</div>
+					</label>
+				</li>
+			</ul>
+		</div>
+	</body>
+</html>

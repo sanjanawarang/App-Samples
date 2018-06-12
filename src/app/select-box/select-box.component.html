@@ -1,0 +1,13 @@
+<div class="container">
+    <div class="input-field col s12">
+        <label for="selectedFund" class="input-label">Select from our recommended funds: </label>
+        <input id="selectedFund" type="text" placeholder="Search.." class="input-box" [(ngModel)]=query (keyup)=filter() (focus)=filter()>
+    </div>
+    <div class="dropdown" *ngIf="filteredList.length > 0">
+        <ul>
+            <li *ngFor="let item of filteredList">
+                <a (click)="select(item)">{{item}}</a>
+            </li>
+        </ul>
+    </div>
+</div>

@@ -1,0 +1,46 @@
+.container {
+    /* display: flex; */
+    width: 450px;
+}
+
+.input-field {
+    display: inline-grid;
+    width: 450px;
+}
+
+.input-label {
+    font-size: 14px;
+    margin: 10px 0;
+}
+
+.input-box {
+    /* border-box: box-sizing; */
+    /* background-image: url('searchicon.png'); */
+    /* background-position: 14px 12px; */
+    /* background-repeat: no-repeat; */
+    background-color: #dddddd30;
+    font-size: 14px;
+    padding: 12px 10px;
+    /* border: none; */
+    border: 1px solid #ddd;
+    text-overflow: ellipsis;
+}
+
+.dropdown {
+    /* display: list-item; */
+    box-shadow: 1px 2px 2px #ddd;
+    max-height: 500px;
+    overflow: auto;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0 5px;
+}
+
+li {
+    padding: 7px 0;
+    border-bottom: 1px solid #ddd;
+    cursor: pointer;
+}
